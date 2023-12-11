@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"ts-node checkPalindrome.ts",
     "test": "jest"
   },
   "keywords": [],
