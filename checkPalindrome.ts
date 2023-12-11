@@ -1,5 +1,5 @@
 import readline from 'readline';
-import isPalindrome from './utils/palindrome'
+import { isPalindrome, reverseMessage } from './utils/palindrome'
 import { welcomeMessage, endMessage } from './utils/date';
 
 console.log(welcomeMessage);
@@ -11,12 +11,10 @@ const rl = readline.createInterface({
 
 rl.question('Entrez une chaîne de caractères à vérifier : ', (stringToTest: string) => {
     rl.close();
+    console.log(reverseMessage(stringToTest))
     if (isPalindrome(stringToTest)) {
-        console.log('La chaîne est un palindrome.');
-    } else {
-        console.log('La chaîne n\'est pas un palindrome.');
+        console.log('Bien Dit');
     }
-
     console.log(endMessage);
     process.exit();
 });
