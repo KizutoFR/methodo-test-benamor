@@ -1,4 +1,4 @@
-import isPalindrome from '../utils/palindrome'
+import {isPalindrome} from '../utils/palindrome'
 import { welcomeMessage, endMessage } from '../utils/date';
 beforeAll(() => {
     console.log(welcomeMessage);
