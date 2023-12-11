@@ -4,7 +4,7 @@ import VerificateurPalindrome from "../utils/palindrome";
 
 describe("On vérifie si l'entrée est un palindrome.", () => {
   const palindromes = [["kayak"]];
-  const chaines = [["trucs"]];
+  const chaines = [["chose"]];
 
   test.each([...chaines, ...palindromes])(
     "QUAND on saisit une chaine ALORS celle-ci est renvoyée en miroir.",
