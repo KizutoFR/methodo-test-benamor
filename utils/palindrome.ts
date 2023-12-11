@@ -1,11 +1,13 @@
-function isPalindrome(message: string): boolean {
-    const cleanedStr = message.toLowerCase().replace(/[\W_]/g, '');
-    const reversedStr = reverseMessage(cleanedStr);
-    return cleanedStr === reversedStr;
-}
+import * as os from "os";
 
-function reverseMessage(message: string): string {
-    return message.split('').reverse().join('');
-}
+export default class VerificateurPalindrome {
+  public static verifier(str: string): string {
+    if (!str) return "";
 
-export { isPalindrome, reverseMessage}
+    let result = str.split("").reverse().join("");
+
+    if (str === result) result += os.EOL + "Bien dit !";
+
+    return "Bonjour" + os.EOL + result + os.EOL + "Au revoir";
+  }
+}
