@@ -1,5 +1,5 @@
-import { LangueInterface } from "../../src/domain/langue.interface";
-import { MomentDeLaJournee } from "../../src/domain/moments";
+import { LangueInterface } from "../../../src/domain/langue.interface";
+import { MomentDeLaJournee } from "../../../src/domain/moments";
 
 export class LangueFake implements LangueInterface {
     Féliciter(): string {

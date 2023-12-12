@@ -1,10 +1,10 @@
 import { LangueInterface } from "../domain/langue.interface";
 import { MomentDeLaJournee } from "../domain/moments";
 import { VérificateurPalindrome } from "../domain/validate.palindrome";
-import { timeToMoment } from "./moments.range";
 import readline, { Interface } from 'readline';
 import * as os from 'os';
 import { LanguesFactory } from "./langues.factory";
+import { MomentFactory } from "./moment.factory";
 
 export class PalindromeConsole {
     private readonly _input: NodeJS.ReadableStream = process.stdin;
@@ -30,8 +30,8 @@ export class PalindromeConsole {
             const locale: string = Intl.DateTimeFormat().resolvedOptions().locale;
         
             const langue: LangueInterface = new LanguesFactory().build(locale);
-            const moment: MomentDeLaJournee = timeToMoment(now);
-        
+            const moment: MomentDeLaJournee = new MomentFactory().fromDate(now);
+
             const palindrome = new VérificateurPalindrome(langue, moment);
             console.log(palindrome.Vérifier(stringToTest))
             this.start();

@@ -1,10 +1,10 @@
 import * as os from "os";
-import {Expressions} from "../src/domain/expressions";
-import {LangueFrançaise} from "../src/domain/langue.francais";
+import {Expressions} from "../../src/domain/expressions";
+import {LangueFrançaise} from "../../src/domain/langue.francais";
 import {VérificateurPalindromeBuilder} from "./utils/validate.palindrome.builder";
-import {LangueAnglaise} from "../src/domain/langue.anglais";
-import {LangueInterface} from "../src/domain/langue.interface";
-import { MomentDeLaJournee } from "../src/domain/moments";
+import {LangueAnglaise} from "../../src/domain/langue.anglais";
+import {LangueInterface} from "../../src/domain/langue.interface";
+import { MomentDeLaJournee } from "../../src/domain/moments";
 import { LangueFake } from "./utils/langue.fake";
 
 const palindrome = 'radar';
