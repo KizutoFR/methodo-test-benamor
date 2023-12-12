@@ -1,7 +1,7 @@
-import {VérificateurPalindrome} from "../../src/validate.palindrome";
-import {LangueFrançaise} from "../../src/langue.francais";
-import {LangueInterface} from "../../src/langue.interface";
-import { MomentDeLaJournee } from "../../src/moments";
+import {VérificateurPalindrome} from "../../src/domain/validate.palindrome";
+import {LangueFrançaise} from "../../src/domain/langue.francais";
+import {LangueInterface} from "../../src/domain/langue.interface";
+import { MomentDeLaJournee } from "../../src/domain/moments";
 
 export class VérificateurPalindromeBuilder {
     private _langue: LangueInterface = new LangueFrançaise();
