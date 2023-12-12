@@ -1,11 +1,11 @@
 import * as os from "os";
 import {Expressions} from "../src/expressions";
-import {LangueFrançaise} from "../src/langueFrancaise";
-import {VérificateurPalindromeBuilder} from "./utils/verificateurPalindromeBuilder";
-import {LangueAnglaise} from "../src/langueAnglaise";
+import {LangueFrançaise} from "../src/langue.francais";
+import {VérificateurPalindromeBuilder} from "./utils/validate.palindrome.builder";
+import {LangueAnglaise} from "../src/langue.anglais";
 import {LangueInterface} from "../src/langue.interface";
-import { MomentDeLaJournee } from "../src/momentDeLaJournee";
-import { LangueFake } from "./utils/langueFake";
+import { MomentDeLaJournee } from "../src/moments";
+import { LangueFake } from "./utils/langue.fake";
 
 const palindrome = 'radar';
 const nonPalindromes = ['test', 'ynov']

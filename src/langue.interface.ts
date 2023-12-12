@@ -1,4 +1,4 @@
-import { MomentDeLaJournee } from "./momentDeLaJournee";
+import { MomentDeLaJournee } from "./moments";
 
 export interface LangueInterface {
     Féliciter(): string;

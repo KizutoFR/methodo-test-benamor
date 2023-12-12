@@ -1,6 +1,6 @@
 import {LangueInterface} from "./langue.interface";
 import {Expressions} from "./expressions";
-import { MomentDeLaJournee } from "./momentDeLaJournee";
+import { MomentDeLaJournee } from "./moments";
 
 export class LangueAnglaise implements LangueInterface {
     public Acquitter(moment: MomentDeLaJournee): string {

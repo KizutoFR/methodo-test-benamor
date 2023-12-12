@@ -1,7 +1,6 @@
 import * as os from "os";
-import {Expressions} from "./expressions";
 import {LangueInterface} from "./langue.interface";
-import { MomentDeLaJournee } from "./momentDeLaJournee";
+import { MomentDeLaJournee } from "./moments";
 
 export class VérificateurPalindrome {
     private readonly _langue: LangueInterface;
