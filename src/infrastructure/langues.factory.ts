@@ -1,11 +1,7 @@
 import { LangueInterface } from "../domain/langue.interface";
 import { LangueAnglaise } from "../domain/langue.anglais";
 import { LangueFrançaise } from "../domain/langue.francais";
-
-export class SystemLocale {
-    public static Enlish: string = 'en-US';
-    public static French: string = 'fr-FR';
-}
+import { SystemLocale } from "./system-locale";
 
 export class LanguesFactory {
     build(locale: string): LangueInterface {
